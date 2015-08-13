@@ -15,8 +15,8 @@ const Y = a => (b => a(c => b(b)(c)))(b => a(c => b(b)(c)));
 # Ideas
 
 ```javascript
-I = S(K)(K)
 B = S(K(S))(K)
+I = S(K)(K)
 ```
 
 ```javascript
