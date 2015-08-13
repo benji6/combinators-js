@@ -1,0 +1,23 @@
+{
+  "name": "combinators",
+  "version": "0.0.0",
+  "description": "Some combinators",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/babel-node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benji6/combinators.git"
+  },
+  "author": "Ben Hall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benji6/combinators/issues"
+  },
+  "homepage": "https://github.com/benji6/combinators",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "tape": "^4.1.0"
+  }
+}

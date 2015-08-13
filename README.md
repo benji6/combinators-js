@@ -33,3 +33,7 @@ V(0)(V(1)(V(2)()))(K(I))(K(I))(K) === 2;
 ```javascript
 const factorial = Y(recur => x => (x === 1 ? 1 : x * recur(x - 1)));
 ```
+
+# Practical Ideas
+
+Errr...
