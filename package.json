@@ -4,7 +4,7 @@
   "description": "Some combinators",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/babel-node test.js"
+    "test": "node_modules/.bin/babel-node --stage 0 test.js"
   },
   "repository": {
     "type": "git",
