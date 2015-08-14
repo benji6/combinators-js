@@ -19,8 +19,8 @@ All are tested by their definition in terms of S and K:
 test('B', equal(B(a)(b)(c), S(K(S))(K)(a)(b)(c)));
 test('C', equal(C(a)(b)(c), S(S(K(S(K(S))(K)))(S))(K(K))(a)(b)(c)));
 test('I', equal(I(a), S(K)(K)(a)));
-test('K', equal(K, K));
-test('S', equal(S, S));
+test('K', equal(K(a)(b), K(a)(b)));
+test('S', equal(S(a)(b)(c), S(a)(b)(c)));
 ```
 
 
