@@ -16,14 +16,14 @@ const Y = a => (b => a(c => b(b)(c)))(b => a(c => b(b)(c)));
 Here are some tests:
 
 ```javascript
-test('B')(equal(B)(S(K(S))(K)));
-test('C')(equal(C)(S(S(K(S(K(S))(K)))(S))(K(K))));
-test('I')(equal(I)(S(K)(K)));
-test('K')(equal(K)(K));
-test('S')(equal(S)(S));
-test('V')(equal(V)(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))(S(K(S(S(K)(K))))(K))));
+test('B')(B)(S(K(S))(K));
+test('C')(C)(S(S(K(S(K(S))(K)))(S))(K(K)));
+test('I')(I)(S(K)(K));
+test('K')(K)(K);
+test('S')(S)(S);
+test('V')(V)(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))(S(K(S(S(K)(K))))(K)));
+test('W')(W)(S(K(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(K))))(K))))))(K));
 ```
-
 
 Here are some ideas:
 
