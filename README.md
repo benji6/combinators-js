@@ -13,7 +13,7 @@ const W = a => b => a(b)(b);
 const Y = a => (b => a(c => b(b)(c)))(b => a(c => b(b)(c)));
 ```
 
-All are tested by their definition in terms of S and K:
+Here are some tests:
 
 ```javascript
 test('B', equal(B(a)(b)(c), S(K(S))(K)(a)(b)(c)));
