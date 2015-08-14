@@ -5,9 +5,22 @@ Here are some combinators:
 ```javascript
 const B = a => b => c => a(b(c));
 const C = a => b => c => a(c)(b);
+const D = a => b => c => d => a(b)(c(d));
+const E = a => b => c => d => e => a(b)(c(d)(e));
+const F = a => b => c => c(b)(a);
+const G = a => b => c => d => a(d)(b(c));
+const H = a => b => c => a(b)(c)(b);
 const I = a => a;
+const J = a => b => c => d => a(b)(a(d)(c));
 const K = a => b => a;
+const L = a => b => a(b(b));
+const M = a => a(a);
+const O = a => b => b(a(b));
+const Q = a => b => c => b(a(c));
+const R = a => b => c => b(c)(a);
 const S = a => b => c => a(c)(b(c));
+const T = a => b => b(a);
+const U = a => b => b(a(a)(b));
 const V = a => b => c => c(a)(b);
 const W = a => b => a(b)(b);
 const Y = a => (b => a(c => b(b)(c)))(b => a(c => b(b)(c)));
@@ -23,7 +36,6 @@ test('K')(K)(K);
 test('S')(S)(S);
 test('V')(V)(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))(S(K(S(S(K)(K))))(K)));
 test('W')(W)(S(K(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(K))))(K))))))(K));
-test('Y')(Y)(S(S)(K)(S(K(S(S)(S(S(S))(K)))))(K));
 ```
 
 Here are some ideas:
