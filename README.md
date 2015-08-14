@@ -23,6 +23,7 @@ test('K')(K)(K);
 test('S')(S)(S);
 test('V')(V)(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))(S(K(S(S(K)(K))))(K)));
 test('W')(W)(S(K(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(K))))(K))))))(K));
+test('Y')(Y)(S(S)(K)(S(K(S(S)(S(S(S))(K)))))(K));
 ```
 
 Here are some ideas:
