@@ -1,25 +1,28 @@
-import test from 'tape';
+import tape from 'tape';
 import {
   B,
   C,
   I,
   K,
   S,
+  V,
 } from './index.es6';
 
-const equal = (x, y) => t => {
-  t.equal(x, y);
-  t.end();
-};
-
+const test = a => b => tape(a, b);
 const createTestData = K(K(K(() => () => {})));
 
 const a = createTestData();
 const b = createTestData();
 const c = createTestData();
 
-test('B', equal(B(a)(b)(c), S(K(S))(K)(a)(b)(c)));
-test('C', equal(C(a)(b)(c), S(S(K(S(K(S))(K)))(S))(K(K))(a)(b)(c)));
-test('I', equal(I(a), S(K)(K)(a)));
-test('K', equal(K(a)(b), K(a)(b)));
-test('S', equal(S(a)(b)(c), S(a)(b)(c)));
+const equal = x => y => t => {
+  t.equal(x(a)(b)(c), y(a)(b)(c));
+  t.end();
+};
+
+test('B')(equal(B)(S(K(S))(K)));
+test('C')(equal(C)(S(S(K(S(K(S))(K)))(S))(K(K))));
+test('I')(equal(I)(S(K)(K)));
+test('K')(equal(K)(K));
+test('S')(equal(S)(S));
+test('V')(equal(V)(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))(S(K(S(S(K)(K))))(K))));

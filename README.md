@@ -16,15 +16,16 @@ const Y = a => (b => a(c => b(b)(c)))(b => a(c => b(b)(c)));
 Here are some tests:
 
 ```javascript
-test('B', equal(B(a)(b)(c), S(K(S))(K)(a)(b)(c)));
-test('C', equal(C(a)(b)(c), S(S(K(S(K(S))(K)))(S))(K(K))(a)(b)(c)));
-test('I', equal(I(a), S(K)(K)(a)));
-test('K', equal(K(a)(b), K(a)(b)));
-test('S', equal(S(a)(b)(c), S(a)(b)(c)));
+test('B')(equal(B)(S(K(S))(K)));
+test('C')(equal(C)(S(S(K(S(K(S))(K)))(S))(K(K))));
+test('I')(equal(I)(S(K)(K)));
+test('K')(equal(K)(K));
+test('S')(equal(S)(S));
+test('V')(equal(V)(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))(S(K(S(S(K)(K))))(K))));
 ```
 
 
-## Ideas
+Here are some ideas:
 
 ```javascript
 V(0)(1)(K) === 0;
@@ -41,6 +42,8 @@ V(0)(V(1)(V(2)()))(K(I))(K(I))(K) === 2;
 const factorial = Y(recur => x => (x === 1 ? 1 : x * recur(x - 1)));
 ```
 
-## Practical Ideas
+Here are some practical ideas:
 
-Errr...
+```javascript
+
+```
