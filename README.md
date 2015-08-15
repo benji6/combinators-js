@@ -73,3 +73,10 @@ Here are some practical ideas:
 ```javascript
 
 ```
+
+Here are some resources:
+
+- http://www.angelfire.com/tx4/cus/combinator/birds.html
+- https://github.com/raganwald/oscin.es
+- http://raganwald.com/2015/02/13/functional-quantum-electrodynamics.html
+- http://dkeenan.com/Lambda/
