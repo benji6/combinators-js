@@ -1,4 +1,10 @@
-# Combinators
+# combinators-js
+
+Here are some instructions:
+
+```bash
+npm i -S combinators-js
+```
 
 Here are some combinators:
 

@@ -1,7 +1,23 @@
 {
-  "name": "combinators",
+  "name": "combinators-js",
   "version": "1.0.0",
   "description": "Some combinators",
+  "keywords": [
+    "bird",
+    "birds",
+    "combinator",
+    "combinatory",
+    "combinators",
+    "I",
+    "idiot",
+    "K",
+    "kestrel",
+    "logic",
+    "S",
+    "sage",
+    "starling",
+    "Y"
+  ],
   "main": "index.js",
   "scripts": {
     "build": "node_modules/.bin/babel --stage 0 index.es6.js -o index.js",
@@ -9,14 +25,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/benji6/combinators.git"
+    "url": "https://github.com/benji6/combinators-js.git"
   },
   "author": "Ben Hall",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/benji6/combinators/issues"
+    "url": "https://github.com/benji6/combinators-js/issues"
   },
-  "homepage": "https://github.com/benji6/combinators",
+  "homepage": "https://github.com/benji6/combinators-js",
   "devDependencies": {
     "babel": "^5.8.21",
     "tape": "^4.1.0"
