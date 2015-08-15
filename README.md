@@ -1,5 +1,7 @@
 # combinators-js
 
+[![npm version](https://badge.fury.io/js/combinators-js.svg)](http://badge.fury.io/js/combinators-js)
+
 Here are some instructions:
 
 ```bash
