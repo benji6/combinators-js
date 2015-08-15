@@ -23,8 +23,7 @@ test('F')(F)(S(K(S(S(K)(K))(K(S(K(S(S(K)(K))))(K)))))(S(K(S(K(S(K(S))(K)))(S(K(S
 test('G')(G)(S(K(S(K(S))(K)))(S(S(K(S(K(S))(K)))(S))(K(K))));
 test('H')(H)(S(K(S(K(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(K))))(K))))))(K)))(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))));
 test('I')(I)(S(K)(K));
-test('J')(J)(J);
-// test('J')(J)(J);
+test('J')(J)(S(K(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))))(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(K))))(K))))(K(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))(S(K(S(K(S(K(S))(K)))(S(K(S))(K)))))))));
 test('K')(K)(K);
 test('L')(L)(S(S(K(S))(K))(K(S(S(K)(K))(S(K)(K)))));
 test('M')(M)(S(S(K)(K))(S(K)(K)));
