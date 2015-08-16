@@ -62,18 +62,30 @@ test('W')(W)(S(K(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(K))))(K
 Here are some ideas:
 
 ```javascript
-V(0)(1)(K) === 0;
-V(0)(1)(K(I)) === 1
+// LISP data structures
+const cons = (a, b) => V(a)(b);
+const car = T(K);
+const cdr = T(K(I));
+
+car(cons(0, 1)) === 0;
+cdr(cons(0, 1)) === 1;
+
+const list = (...args) => args.reverse().reduce((l, arg) => V(arg)(l));
+
+list(0, 1, 2)(K) === 0;
+list(0, 1, 2)(K(I))(K) === 1;
+list(0, 1, 2)(K(I))(K(I))(K) === 2;
+
 ```
 
 ```javascript
-V(0)(V(1)(V(2)()))(K) === 0;
-V(0)(V(1)(V(2)()))(K(I))(K) === 1;
-V(0)(V(1)(V(2)()))(K(I))(K(I))(K) === 2;
-```
-
-```javascript
+// recursion of anonymous functions
 const factorial = Y(recur => x => (x === 1 ? 1 : x * recur(x - 1)));
+```
+
+```javascript
+// mock a mockingbird
+M(M);
 ```
 
 Here are some practical ideas:
