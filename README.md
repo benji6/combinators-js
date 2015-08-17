@@ -70,11 +70,11 @@ const cdr = T(K(I));
 car(cons(0, 1)) === 0;
 cdr(cons(0, 1)) === 1;
 
-const list = (...args) => args.reverse().reduce((l, arg) => V(arg)(l));
+const list = (...args) => args.reverse().reduce((l, arg) => V(arg)(l), V(null));
 
-list(0, 1, 2)(K) === 0;
-list(0, 1, 2)(K(I))(K) === 1;
-list(0, 1, 2)(K(I))(K(I))(K) === 2;
+car(list(0, 1, 2)) === 0;
+car(cdr(list(0, 1, 2))) === 1;
+car(cdr(cdr(list(0, 1, 2)))) === 2;
 
 ```
 
