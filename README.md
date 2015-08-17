@@ -70,7 +70,7 @@ const cdr = T(K(I));
 car(cons(0, 1)) === 0;
 cdr(cons(0, 1)) === 1;
 
-const list = (...args) => args.reverse().reduce((l, arg) => V(arg)(l), V(null));
+const list = (...args) => args.reverse().reduce((l, arg) => V(arg)(l), null);
 
 car(list(0, 1, 2)) === 0;
 car(cdr(list(0, 1, 2))) === 1;
@@ -84,7 +84,7 @@ const factorial = Y(recur => x => (x === 1 ? 1 : x * recur(x - 1)));
 ```
 
 ```javascript
-// mock a mockingbird
+// omega bird (mock a mockingbird)
 M(M);
 ```
 
