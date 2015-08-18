@@ -90,7 +90,8 @@ car(cdr(cdr(list(0, 1, 2)))) === 2;
 // recursion of anonymous functions
 const factorial = Y(recur => x => (x === 1 ? 1 : x * recur(x - 1)));
 
-// TCO'd recursion of anonymous functions using a modified Y taking a variadic non-combinator function
+// TCO'd recursion of anonymous functions using a modified Y
+// taking a variadic non-combinator function
 const Y_ = a => (b => a((...c) => b(b)(...c)))(b => a((...c) => b(b)(...c)));
 const factorialTCO = Y_(recur => (x, y = 1) => x === 1 ? y : recur(x - 1, x * y));
 ```
