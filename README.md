@@ -71,18 +71,29 @@ Here are some ideas:
 
 ```javascript
 // LISP data structures
-const cons = (a, b) => V(a)(b);
+const cons = (a, b) => V(a)(b); // manual uncurry
 const car = T(K);
 const cdr = T(K(I));
 
 car(cons(0, 1)) === 0;
 cdr(cons(0, 1)) === 1;
 
+const nil = () => {};
 const list = (...args) => args.reverse().reduce((l, arg) => V(arg)(l), null);
+const length = l => l === nil ? 0 : 1 + length(l(K(I)));
+const reverse = (l, m = nil) => l === nil ? m : reverse(l(K(I)), V(l(K))(m));
+const map = f => (l, m = nil) => l === nil ? reverse(m) : map(f)(l(K(I)), V(f(l(K)))(m));
 
-car(list(0, 1, 2)) === 0;
-car(cdr(list(0, 1, 2))) === 1;
-car(cdr(cdr(list(0, 1, 2)))) === 2;
+const arbitraryList = list(0, 1, 2, 3, 4, 5);
+
+car(arbitraryList) === 0;
+car(cdr(arbitraryList)) === 1;
+car(cdr(cdr(arbitraryList))) === 2;
+
+length(arbitraryList) === 3;
+
+B(map(::console.log))(map(x => x ** x))(arbitraryList);
+// => 1 1 4 27 256 3125
 
 ```
 
