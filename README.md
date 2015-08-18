@@ -8,7 +8,15 @@ Here are some instructions:
 npm i -S combinators-js
 ```
 
-Here are some combinators:
+```javascript
+import {
+  B, C, D, E, F, G, H, I, J, K, L, M, O, Q, R, S, T, U, V, W, Y,
+} from './index.es6';
+
+// or use require or whatever, but you're good to go!
+```
+
+Here are the included combinators with their definitions:
 
 ```javascript
 const B = a => b => c => a(b(c));
@@ -34,7 +42,7 @@ const W = a => b => a(b)(b);
 const Y = a => (b => a(c => b(b)(c)))(b => a(c => b(b)(c)));
 ```
 
-Here are some tests:
+Here are the tests:
 
 ```javascript
 test('B')(B)(S(K(S))(K));
@@ -81,6 +89,10 @@ car(cdr(cdr(list(0, 1, 2)))) === 2;
 ```javascript
 // recursion of anonymous functions
 const factorial = Y(recur => x => (x === 1 ? 1 : x * recur(x - 1)));
+
+// TCO'd recursion of anonymous functions using a modified Y taking a variadic non-combinator function
+const Y_ = a => (b => a((...c) => b(b)(...c)))(b => a((...c) => b(b)(...c)));
+const factorialTCO = Y_(recur => (x, y = 1) => x === 1 ? y : recur(x - 1, x * y));
 ```
 
 ```javascript
