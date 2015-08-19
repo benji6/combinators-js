@@ -79,7 +79,7 @@ car(cons(0, 1)) === 0;
 cdr(cons(0, 1)) === 1;
 
 const nil = () => {};
-const list = (...args) => args.reverse().reduce((l, arg) => V(arg)(l), null);
+const list = (...args) => args.reverse().reduce((l, arg) => V(arg)(l), nil);
 const length = l => l === nil ? 0 : 1 + length(l(K(I)));
 const reverse = (l, m = nil) => l === nil ? m : reverse(l(K(I)), V(l(K))(m));
 const map = f => (l, m = nil) => l === nil ? reverse(m) : map(f)(l(K(I)), V(f(l(K)))(m));
