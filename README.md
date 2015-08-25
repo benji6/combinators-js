@@ -16,7 +16,7 @@ import {
 // or use require or whatever, but you're good to go!
 ```
 
-Here are the included combinators with their definitions:
+Here are the included combinators with their definitions (they are transpiled to standard functions so will run in any JS evironmment):
 
 ```javascript
 const B = a => b => c => a(b(c));
