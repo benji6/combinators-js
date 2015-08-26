@@ -11,7 +11,7 @@ npm i -S combinators-js
 ```javascript
 import {
   B, C, D, E, F, G, H, I, J, K, L, M, O, Q, R, S, T, U, V, W, Y,
-} from './index.es6';
+} from 'combinators-js';
 
 // or use require or whatever, but you're good to go!
 ```
