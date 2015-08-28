@@ -2,18 +2,13 @@ import tape from 'tape';
 import * as combinators from './index.es6';
 
 const {K, S, Y} = combinators;
-
-const a = K(K(K(K(K(K(K))))));
-const b = K(K(K(K(K(K(K))))));
-const c = K(K(K(K(K(K(K))))));
-const d = K(K(K(K(K(K(K))))));
-const e = K(K(K(K(K(K(K))))));
+const [a, b, c, d, e] = Array.from({length: 5}, () => K(K(K(K(K(K(K)))))));
 
 const equal = x => y => t => {
   t.equal(x(a)(b)(c)(d)(e), y(a)(b)(c)(d)(e));
   t.end();
 };
-const test = a => b => tape(a, equal(combinators[a])(b));
+const test = x => y => tape(x, equal(combinators[x])(y));
 
 test('B')(S(K(S))(K));
 test('C')(S(S(K(S(K(S))(K)))(S))(K(K)));
