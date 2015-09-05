@@ -123,8 +123,8 @@ Here are some practical ideas:
 ```
 
 Here are some resources:
-
-- http://www.angelfire.com/tx4/cus/combinator/birds.html
-- https://github.com/raganwald/oscin.es
-- http://raganwald.com/2015/02/13/functional-quantum-electrodynamics.html
-- http://dkeenan.com/Lambda/
+- [To Mock a Mockingbird](https://en.wikipedia.org/wiki/To_Mock_a_Mockingbird)
+- [http://www.angelfire.com/tx4/cus/combinator/birds.html](http://www.angelfire.com/tx4/cus/combinator/birds.html)
+- [https://github.com/raganwald/oscin.es](https://github.com/raganwald/oscin.es)
+- [http://raganwald.com/2015/02/13/functional-quantum-electrodynamics.html](http://raganwald.com/2015/02/13/functional-quantum-electrodynamics.html)
+- [http://dkeenan.com/Lambda/](http://dkeenan.com/Lambda/)
