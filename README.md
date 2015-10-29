@@ -40,7 +40,7 @@ const T = a => b => b(a);
 const U = a => b => b(a(a)(b));
 const V = a => b => c => c(a)(b);
 const W = a => b => a(b)(b);
-const Y = a => (b => a(c => b(b)(c)))(b => a(c => b(b)(c)));
+const Y = a => (b => b(b))(b => a(c => b(b)(c)));
 ```
 
 Here are the tests:

@@ -19,4 +19,4 @@ export const T = a => b => b(a);
 export const U = a => b => b(a(a)(b));
 export const V = a => b => c => c(a)(b);
 export const W = a => b => a(b)(b);
-export const Y = a => (b => a(c => b(b)(c)))(b => a(c => b(b)(c)));
+export const Y = a => (b => b(b))(b => a(c => b(b)(c)));
