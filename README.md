@@ -8,6 +8,8 @@ Here are some instructions:
 npm i -S combinators-js
 ```
 
+You may also consume the ES2015 source directly using [Rollup](https://github.com/rollup/rollup)
+
 ```javascript
 import {
   B, C, D, E, F, G, H, I, J, K, KI, L, M, O, Q, R, S, T, U, V, W, Y,
