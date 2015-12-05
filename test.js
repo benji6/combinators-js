@@ -20,7 +20,6 @@ test('H')(S(K(S(K(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(K))))(
 test('I')(S(K)(K))
 test('J')(S(K(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))))(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(K))))(K))))(K(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))(S(K(S(K(S(K(S))(K)))(S(K(S))(K)))))))))
 test('K')(K)
-test('KI')(K(S(K)(K)))
 test('L')(S(S(K(S))(K))(K(S(S(K)(K))(S(K)(K)))))
 test('M')(S(S(K)(K))(S(K)(K)))
 test('O')(S(S(K)(K)))

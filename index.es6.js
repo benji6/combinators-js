@@ -8,7 +8,6 @@ export const H = a => b => c => a(b)(c)(b)
 export const I = a => a
 export const J = a => b => c => d => a(b)(a(d)(c))
 export const K = a => b => a
-export const KI = a => b => b
 export const L = a => b => a(b(b))
 export const M = a => a(a)
 export const O = a => b => b(a(b))

@@ -12,7 +12,7 @@ You may also consume the ES2015 source directly using [Rollup](https://github.co
 
 ```javascript
 import {
-  B, C, D, E, F, G, H, I, J, K, KI, L, M, O, Q, R, S, T, U, V, W, Y,
+  B, C, D, E, F, G, H, I, J, K, L, M, O, Q, R, S, T, U, V, W, Y,
 } from 'combinators-js'
 
 // or use require or whatever, but you're good to go!
@@ -31,7 +31,6 @@ const H = a => b => c => a(b)(c)(b)
 const I = a => a
 const J = a => b => c => d => a(b)(a(d)(c))
 const K = a => b => a
-const KI = a => b => b
 const L = a => b => a(b(b))
 const M = a => a(a)
 const O = a => b => b(a(b))
@@ -58,7 +57,6 @@ test('H')(S(K(S(K(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(K))))(
 test('I')(S(K)(K))
 test('J')(S(K(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))))(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(K))))(K))))(K(S(K(S(S(K(S(K(S))(K)))(S))(K(K))))(S(K(S(K(S(K(S))(K)))(S(K(S))(K)))))))))
 test('K')(K)
-test('KI')(K(S(K)(K)))
 test('L')(S(S(K(S))(K))(K(S(S(K)(K))(S(K)(K)))))
 test('M')(S(S(K)(K))(S(K)(K)))
 test('O')(S(S(K)(K)))
@@ -75,6 +73,7 @@ Here are some ideas:
 
 ```javascript
 // LISP data structures
+const KI = K(I)
 const cons = (a, b) => V(a)(b) // manual uncurry
 const car = T(K)
 const cdr = T(KI)
