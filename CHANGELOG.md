@@ -1,5 +1,23 @@
 # Changelog
 
+## 2.2.x
+
+Added the following combinators:
+- `B1`
+- `B2`
+- `B3`
+- `D1`
+- `D2`
+- `F_`
+- `F__`
+- `M2`
+- `Q2`
+- `Q4`
+- `R_`
+- `R__`
+- `V_`
+- `V__`
+
 ## 2.1.x
 
 Added the following combinators:

@@ -11,6 +11,38 @@ var B = function B(a) {
   };
 };
 exports.B = B;
+var B1 = function B1(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return a(b(c)(d));
+      };
+    };
+  };
+};
+exports.B1 = B1;
+var B2 = function B2(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return function (e) {
+          return a(b(c)(d)(e));
+        };
+      };
+    };
+  };
+};
+exports.B2 = B2;
+var B3 = function B3(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return a(b(c(d)));
+      };
+    };
+  };
+};
+exports.B3 = B3;
 var C = function C(a) {
   return function (b) {
     return function (c) {
@@ -51,6 +83,30 @@ var D = function D(a) {
   };
 };
 exports.D = D;
+var D1 = function D1(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return function (e) {
+          return a(b)(c)(d(e));
+        };
+      };
+    };
+  };
+};
+exports.D1 = D1;
+var D2 = function D2(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return function (e) {
+          return a(b(c))(d(e));
+        };
+      };
+    };
+  };
+};
+exports.D2 = D2;
 var E = function E(a) {
   return function (b) {
     return function (c) {
@@ -71,6 +127,28 @@ var F = function F(a) {
   };
 };
 exports.F = F;
+var F_ = function F_(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return a(d)(c)(b);
+      };
+    };
+  };
+};
+exports.F_ = F_;
+var F__ = function F__(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return function (e) {
+          return a(b)(e)(d)(c);
+        };
+      };
+    };
+  };
+};
+exports.F__ = F__;
 var G = function G(a) {
   return function (b) {
     return function (c) {
@@ -133,6 +211,12 @@ var M = function M(a) {
   return a(a);
 };
 exports.M = M;
+var M2 = function M2(a) {
+  return function (b) {
+    return a(b)(a(b));
+  };
+};
+exports.M2 = M2;
 var O = function O(a) {
   return function (b) {
     return b(a(b));
@@ -155,6 +239,14 @@ var Q1 = function Q1(a) {
   };
 };
 exports.Q1 = Q1;
+var Q2 = function Q2(a) {
+  return function (b) {
+    return function (c) {
+      return b(c(a));
+    };
+  };
+};
+exports.Q2 = Q2;
 var Q3 = function Q3(a) {
   return function (b) {
     return function (c) {
@@ -163,6 +255,14 @@ var Q3 = function Q3(a) {
   };
 };
 exports.Q3 = Q3;
+var Q4 = function Q4(a) {
+  return function (b) {
+    return function (c) {
+      return c(b(a));
+    };
+  };
+};
+exports.Q4 = Q4;
 var R = function R(a) {
   return function (b) {
     return function (c) {
@@ -171,6 +271,28 @@ var R = function R(a) {
   };
 };
 exports.R = R;
+var R_ = function R_(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return a(c)(d)(b);
+      };
+    };
+  };
+};
+exports.R_ = R_;
+var R__ = function R__(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return function (e) {
+          return a(b)(d)(e)(c);
+        };
+      };
+    };
+  };
+};
+exports.R__ = R__;
 var S = function S(a) {
   return function (b) {
     return function (c) {
@@ -199,6 +321,28 @@ var V = function V(a) {
   };
 };
 exports.V = V;
+var V_ = function V_(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return a(c)(b)(d);
+      };
+    };
+  };
+};
+exports.V_ = V_;
+var V__ = function V__(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return function (e) {
+          return a(b)(e)(c)(d);
+        };
+      };
+    };
+  };
+};
+exports.V__ = V__;
 var W = function W(a) {
   return function (b) {
     return a(b)(b);
