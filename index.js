@@ -19,6 +19,28 @@ var C = function C(a) {
   };
 };
 exports.C = C;
+var C_ = function C_(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return a(b)(d)(c);
+      };
+    };
+  };
+};
+exports.C_ = C_;
+var C__ = function C__(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return function (e) {
+          return a(b)(c)(e)(d);
+        };
+      };
+    };
+  };
+};
+exports.C__ = C__;
 var D = function D(a) {
   return function (b) {
     return function (c) {
@@ -71,6 +93,20 @@ var I = function I(a) {
   return a;
 };
 exports.I = I;
+var I_ = function I_(a) {
+  return function (b) {
+    return a(b);
+  };
+};
+exports.I_ = I_;
+var I__ = function I__(a) {
+  return function (b) {
+    return function (c) {
+      return a(b)(c);
+    };
+  };
+};
+exports.I__ = I__;
 var J = function J(a) {
   return function (b) {
     return function (c) {
@@ -111,6 +147,22 @@ var Q = function Q(a) {
   };
 };
 exports.Q = Q;
+var Q1 = function Q1(a) {
+  return function (b) {
+    return function (c) {
+      return a(c(b));
+    };
+  };
+};
+exports.Q1 = Q1;
+var Q3 = function Q3(a) {
+  return function (b) {
+    return function (c) {
+      return c(a(b));
+    };
+  };
+};
+exports.Q3 = Q3;
 var R = function R(a) {
   return function (b) {
     return function (c) {
@@ -153,11 +205,33 @@ var W = function W(a) {
   };
 };
 exports.W = W;
+var W_ = function W_(a) {
+  return function (b) {
+    return function (c) {
+      return a(b)(c)(c);
+    };
+  };
+};
+exports.W_ = W_;
+var W__ = function W__(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return a(b)(c)(d)(d);
+      };
+    };
+  };
+};
+exports.W__ = W__;
+var W1 = function W1(a) {
+  return function (b) {
+    return b(a)(a);
+  };
+};
+exports.W1 = W1;
 var Y = function Y(a) {
   return (function (b) {
-    return a(function (c) {
-      return b(b)(c);
-    });
+    return b(b);
   })(function (b) {
     return a(function (c) {
       return b(b)(c);
