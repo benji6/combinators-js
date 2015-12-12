@@ -1,6 +1,7 @@
 # combinators-js
 
 [![npm version](https://badge.fury.io/js/combinators-js.svg)](http://badge.fury.io/js/combinators-js)
+[![Build Status](https://travis-ci.org/benji6/combinators-js.svg)](https://travis-ci.org/benji6/combinators-js)
 
 Here are some instructions:
 
