@@ -21,8 +21,9 @@
   "main": "index.js",
   "jsnext:main": "index.es6.js",
   "scripts": {
-    "build": "node_modules/.bin/babel --stage 0 index.es6.js -o index.js",
-    "test": "node_modules/.bin/babel-node --stage 0 test.js"
+    "build": "babel --stage 0 index.es6.js -o index.js",
+    "test": "babel-node --stage 0 test.js",
+    "watch-test": "nodemon --exec npm test"
   },
   "repository": {
     "type": "git",
