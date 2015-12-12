@@ -141,7 +141,10 @@ Here are some practical ideas:
 
 ```
 
-Here are some resources:
+[Here is some Church encoding](https://github.com/benji6/church)
+
+Here are some other resources:
+
 - [To Mock a Mockingbird](https://en.wikipedia.org/wiki/To_Mock_a_Mockingbird)
 - [http://www.angelfire.com/tx4/cus/combinator/birds.html](http://www.angelfire.com/tx4/cus/combinator/birds.html)
 - [https://github.com/raganwald/oscin.es](https://github.com/raganwald/oscin.es)
