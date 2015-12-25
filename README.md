@@ -149,7 +149,7 @@ map(::console.log)(reversed) // => 25 16 9
 
 ```javascript
 // recursion of anonymous functions
-Y(recur => x => (x === 1 ? 1 : x * recur(x - 1)))(5) // => 120
+Y(recur => x => x === 1 ? 1 : x * recur(x - 1))(5) // => 120
 
 // TCO'd recursion of anonymous functions using a modified Y
 // taking a variadic non-combinator function
