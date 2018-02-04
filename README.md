@@ -3,24 +3,26 @@
 [![npm version](https://badge.fury.io/js/combinators-js.svg)](http://badge.fury.io/js/combinators-js)
 [![Build Status](https://travis-ci.org/benji6/combinators-js.svg)](https://travis-ci.org/benji6/combinators-js)
 
-Here are some instructions:
+## Getting Started
+
+Install (other package managers are available):
 
 ```bash
 npm i -S combinators-js
 ```
 
-You may also consume the ES2015 source directly using [Rollup](https://github.com/rollup/rollup)
+Import (other module systems are available):
 
 ```javascript
 import {
   B, B1, B2, B3, C, C_, C__, D, D1, D2, E, F, F_, F__ G, H, I, I_, I__, J, K, L,
   M, M2, O, Q, Q1, Q2, Q3, Q4, R, R_, R__, S, T, U, V, V_, V__, W, W_, W__, W1, Y,
 } from 'combinators-js'
-
-// or use require or whatever, but you're good to go!
 ```
 
-Here are the included combinators with their definitions (they are transpiled to standard functions so will run in any JS evironmment):
+## Definitions
+
+Here are the included combinators with their definitions (they are compiled to standard functions so will run in any JS evironmment):
 
 ```javascript
 const B = a => b => c => a(b(c))
@@ -69,7 +71,7 @@ const W1 = a => b => b(a)(a)
 const Y = a => (b => b(b))(b => a(c => b(b)(c)))
 ```
 
-Here are the tests:
+## Tests
 
 ```javascript
 test('B')(S(K(S))(K))
@@ -114,7 +116,7 @@ test('W__')(S(K(S(K(S(K(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(
 test('W1')(S(K(S(S(K(S(S(K(S(S(K)(K))(S(K)(K))))(S(K(S(K(S))(K)))(S(K(S(S(K)(K))))(K))))))(K))))(K))
 ```
 
-Here are some ideas:
+## Ideas
 
 ```javascript
 // LISP data structures
@@ -162,15 +164,17 @@ Y_(recur => (x, y = 1) => x === 1 ? y : recur(x - 1, x * y))(5) // => 120
 M(M)
 ```
 
-Here are some practical ideas:
+## Practical Ideas
 
 ```javascript
 
 ```
 
+## See Also
+
 [Here is some Church encoding](https://github.com/benji6/church)
 
-Here are some other resources:
+## Further Reading
 
 - [To Mock a Mockingbird](https://en.wikipedia.org/wiki/To_Mock_a_Mockingbird)
 - [http://www.angelfire.com/tx4/cus/combinator/birds.html](http://www.angelfire.com/tx4/cus/combinator/birds.html)

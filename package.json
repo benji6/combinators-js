@@ -26,7 +26,6 @@
     "Y"
   ],
   "main": "index.js",
-  "jsnext:main": "index.es6.js",
   "scripts": {
     "build": "babel --stage 0 index.es6.js -o index.js",
     "test": "babel-node --stage 0 test.js",
