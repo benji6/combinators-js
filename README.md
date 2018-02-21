@@ -172,7 +172,7 @@ M(M)
 
 ## See Also
 
-[Here is some Church encoding](https://github.com/benji6/church)
+I built a [Church encoding library](https://github.com/benji6/church) too.
 
 ## Further Reading
 
