@@ -2,7 +2,7 @@ import tape from 'tape'
 import * as combinators from './index.es6'
 
 const {K, S} = combinators
-const [a, b, c, d, e] = Array.from({length: 5}, () => K(K(K(K(K(K(K)))))))
+const [a, b, c, d, e] = (function* () { while(true) yield K(K(K(K(K(K(K)))))) })()
 
 const equal = x => y => t => (t.equal(x(a)(b)(c)(d)(e), y(a)(b)(c)(d)(e)), t.end())
 const test = x => y => tape(x, equal(combinators[x])(y))
