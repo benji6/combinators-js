@@ -27,8 +27,8 @@
   ],
   "main": "index.js",
   "scripts": {
-    "build": "babel --stage 0 index.es6.js -o index.js",
-    "test": "babel-node --stage 0 test.js",
+    "build": "babel index.es6.js -o index.js",
+    "test": "babel-node test.js",
     "watch-test": "nodemon --exec npm test"
   },
   "repository": {
