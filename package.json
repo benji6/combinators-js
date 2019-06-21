@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/benji6/combinators-js",
   "devDependencies": {
-    "babel": "^5.8.21",
+    "babel": "^6.23.0",
     "nodemon": "^1.15.1",
     "tape": "^4.1.0"
   }
