@@ -22,7 +22,7 @@ import {
 
 ## Definitions
 
-Here are the included combinators with their definitions (they are compiled to standard functions so will run in any JS evironmment):
+Here are the included combinators with their definitions:
 
 ```javascript
 const B = a => b => c => a(b(c))
@@ -166,8 +166,8 @@ M(M)
 
 ## Practical Ideas
 
-```javascript
-
+```
+¯\_(ツ)_/¯
 ```
 
 ## See Also
