@@ -27,8 +27,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
-    "test:watch": "nodemon --exec 'npm test'"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -41,7 +40,6 @@
   },
   "homepage": "https://github.com/benji6/combinators-js",
   "devDependencies": {
-    "nodemon": "^2.0.0",
     "tape": "^4.1.0"
   }
 }
