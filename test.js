@@ -1,5 +1,5 @@
-import tape from 'tape'
-import * as combinators from './index.es6'
+const tape = require('tape')
+const combinators = require('.')
 
 const {K, S} = combinators
 const [a, b, c, d, e] = (function* () { while(true) yield K(K(K(K(K(K(K)))))) })()

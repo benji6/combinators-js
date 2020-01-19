@@ -27,8 +27,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "build": "babel index.es6.js -o index.js",
-    "test": "babel-node test.js",
+    "test": "node test.js",
     "test:watch": "nodemon --exec 'npm test'"
   },
   "repository": {
@@ -42,7 +41,6 @@
   },
   "homepage": "https://github.com/benji6/combinators-js",
   "devDependencies": {
-    "babel": "^5.8.21",
     "nodemon": "^2.0.0",
     "tape": "^4.1.0"
   }
