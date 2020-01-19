@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.0
+
+All combinators now distributed as arrow functions, support dropped for older environments.
+
 ## 2.2.x
 
 Added the following combinators:
