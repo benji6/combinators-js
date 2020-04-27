@@ -40,6 +40,6 @@
   },
   "homepage": "https://github.com/benji6/combinators-js",
   "devDependencies": {
-    "tape": "^4.1.0"
+    "tape": "^5.0.0"
   }
 }
